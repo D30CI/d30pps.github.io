@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Pps Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo-sales">
+                            <div class="sales-image">
+                                <img src="assets/images/logo/sales-img.png" alt="Logo" srcset="">
+                            </div>
+                        </div>
+
+
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nama-sales">
+                    <span><b>Nama Sales</b></span>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="referensi-order.html" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Referensi Order</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="registrasi-order.html" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Registrasi Order</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item active">
+                            <a href="proses-pengerjaan.html" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Proses Pengerjaan</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Ceklis</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Nota</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Databas / Admin</span>
+                            </a>
+
+                        </li>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="logo-app">
+                    <img src="assets/images/logo/logo-white.png">
+                </div>
+            </div>
+            <div class="page-heading">
+                <h3>List Kerjaan</h3>
+            </div>
+            <div class="page-content">
+                <section class="row">
+
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="list-color" style="background-color: #FFD700;">No</th>
+                                        <th class="table-lebar-120 list-color" style="background-color: #FFD700;">Nomor Polisi</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Merek kendaraan</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Jenis Kendaraan</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Ukuran Kendaraan</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Warna Kendaraan</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Jenis Paket</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Nama Sales</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Nomor Sales</th>
+                                        <th class="table-lebar-120 list-color" style="background-color: #FFD700;">Nama Teknisi</th>
+                                        <th class="list-color" style="background-color: #FFD700;">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-bold-200 list-color">1</td>
+                                        <td class="text-bold-500 list-color">D 4444 DDD</td>
+                                        <td class="list-color">TOYOTA</td>
+                                        <td class="text-bold-500 list-color">AVANZA</td>
+                                        <td class="list-color">MEDIUM</td>
+                                        <td class="list-color">HITAM</td>
+                                        <td class="list-color">PROMO</td>
+                                        <td class="list-color">BAYOR</td>
+                                        <td class="list-color">081212120000</td>
+                                        <td class="list-color"> <span class="fa-fw select-all fas proses"></span> AGUS</td>
+                                        
+                                        <td class="list-color">
+                                            <div class="btn-group dropstart  mb-1">
+                                                <button type="button" class="btn btn-primary btn-xs"
+                                                    data-container="body" data-toggle="popover"
+                                                    title="AGUS" data-placement="left" data-html="true"
+                                                    data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
+                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
+                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-200 list-color">2</td>
+                                        <td class="list-color">B 2222 BBB</td>
+                                        <td class="list-color">TOYOTA</td>
+                                        <td class="text-bold-500 list-color">AVANZA</td>
+                                        <td class="list-color">MEDIUM</td>
+                                        <td class="list-color">HITAM</td>
+                                        <td class="list-color">PROMO</td>
+                                        <td class="list-color">BAYOR</td>
+                                        <td class="list-color">081212120000</td>
+                                        <td class="list-color"><span class="fa-fw select-all fas tunggu"></span> AGUS</td>
+                                        <td class="list-color">
+                                            <div class="btn-group dropstart  mb-1">
+                                                <button type="button" class="btn btn-primary btn-xs"
+                                                    data-container="body" data-toggle="popover"
+                                                    title="AGUS" data-placement="left" data-html="true"
+                                                    data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
+                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
+                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-bold-200 list-color">3</td>
+                                        <td class="list-color">B 2222 BBB</td>
+                                        <td class="list-color">TOYOTA</td>
+                                        <td class="text-bold-500 list-color">AVANZA</td>
+                                        <td class="list-color">MEDIUM</td>
+                                        <td class="list-color">HITAM</td>
+                                        <td class="list-color">PROMO</td>
+                                        <td class="list-color">BAYOR</td>
+                                        <td class="list-color">081212120000</td>
+                                        <td class="list-color"><span class="fa-fw select-all fas tunggu"></span> AGUS</td>
+                                        <td class="list-color">
+                                            <div class="btn-group dropstart  mb-1">
+                                                <button type="button" class="btn btn-primary btn-xs"
+                                                    data-container="body" data-toggle="popover"
+                                                    title="AGUS" data-placement="left" data-html="true"
+                                                    data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
+                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
+                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </section>
+            </div>
+            <div class="foot">
+                <footer>
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2022 &copy; PPS</p>
+                        </div>
+                        <div class="float-end">
+                            <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                    href="https://payone.id">D30 Codingers</a></p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus',
+                html: true,
+                content: function () {
+                    return $(this).attr('data-content');
+                }
+            });
+        });
+    </script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="assets/vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

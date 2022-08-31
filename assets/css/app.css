@@ -2,7 +2,7 @@
 .logo-app{
 	margin: auto;
 	width: 400px;
-	height: 200px;
+	height: 100px;
 	
 }
 .logo-app img{
@@ -130,4 +130,25 @@ right: 5px;
 }
 .image_upload > input{
 	display:none;
+}
+.table-lebar-120{
+	width: 120px
+}
+.warna-table{
+	background-color: #FFD700; 
+}
+.proses{
+	
+	color: #6DE840;
+}
+.tunggu{
+	color: #EF3434;
+}
+
+.list-color{
+  border-inline-color: #000;
+}
+.table-lebar-500{
+	width: 500px;
+  text-align: left;
 }
