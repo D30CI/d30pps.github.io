@@ -16,6 +16,14 @@ for(var i = 0; i < sidebarItems.length; i++) {
 }
 
 
+window.addEventListener('resize', (event) => {
+    var w = window.innerWidth;
+    if(w < 1200) {
+        document.getElementById('sidebar').classList.remove('active');
+    }else{
+        document.getElementById('sidebar').classList.add('active');
+    }
+});
 
 document.querySelector('.burger-btn').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('active');
