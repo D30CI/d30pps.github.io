@@ -1809,3 +1809,34 @@ a {
     margin: 2px;
   }
 }
+
+.logo-tengah {
+  text-align: center;
+  padding: 100px;
+}
+
+.tengah {
+  text-align: center;
+  padding: 5px;
+}
+
+.login-pps {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-size: large;
+  font-weight: bold;
+}
+
+.login-button {
+  background-color: #FFD700;
+  border-color: #fff;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 90px 0 90px;
+  margin: 70px 0 70px 0;
+}
+
+.login-forgot {
+  color: #000;
+}
