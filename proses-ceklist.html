@@ -116,15 +116,74 @@
                 </div>
             </div>
             <div class="page-heading">
-                <h3>Proses Pengerjaan</h3>
+                <h3>Kondisi Kendaraan</h3>
             </div>
             <div class="page-content">
                 <section class="row">
 
                     <div class="row">
+                        <div class="tengah">
+                            <canvas id="mcanvas"></canvas>
+                        </div>
 
+                    </div>
+                    <h3>Keterangan</h3>
 
+                    <div class="row-parking">
+                        <div class="col-6 col-lg-25 col-md-6">
+                            <!-- small box -->
+                            <div class="box-parking bg-white" style="border: 1px solid;">
+                                <div class="img-ket">
+                                    <img src="assets/images/mobil.jpg" alt="">
+                                </div>
+                                <span>Bemper Kiri</span>
 
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-lg-25 col-md-6">
+                            <!-- small box -->
+                            <div class="box-parking bg-white" style="border: 1px solid;">
+                                <div class="img-ket">
+                                    <img src="assets/images/mobil.jpg" alt="">
+                                </div>
+                                <span>Bemper Depan</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-lg-25 col-md-6">
+                            <!-- small box -->
+                            <div class="box-parking bg-white" style="border: 1px solid;">
+                                <div class="img-ket">
+                                    <img src="assets/images/mobil.jpg" alt="">
+                                </div>
+                                <span>Bemper Kanan</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-lg-25 col-md-6">
+                            <!-- small box -->
+                            <div class="box-parking bg-white" style="border: 1px solid;">
+                                <div class="img-ket">
+                                    <img src="assets/images/mobil.jpg" alt="">
+                                </div>
+                                <span>Kap Depan</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-lg-25 col-md-6">
+                            <!-- small box -->
+                            <div class="box-parking bg-white" style="border: 1px solid;">
+                                <div class="img-ket">
+                                    <img src="assets/images/mobil.jpg" alt="">
+                                </div>
+                                <span>Pintu Kiri Depan</span>
+                            </div>
+
+                        </div>
                     </div>
 
 
@@ -144,6 +203,36 @@
             </footer>
         </div>
     </div>
+    <script>
+        var canvas = document.getElementById("mcanvas");
+        canvas.width = 364;
+        canvas.height = 219;
+        canvas.style = "border:1px solid red";
+        var canvasContext = canvas.getContext("2d");
+
+        const image = "https://i.ibb.co/cYfp8SQ/sedan.jpg";
+        let canvasImg = new Image();
+        canvasImg.src = image;
+
+        canvasImg.onload = () => {
+            canvasContext.drawImage(canvasImg, 0, 0, canvas.width, canvas.height);
+        };
+        var coords = [
+            [110, 110],
+            [20, 120],
+            [50, 120],
+            [75, 120],
+            [160, 190],
+        ];
+        setTimeout(() => {
+            for (var i = 0; i < coords.length; i++) {
+                canvasContext.fillStyle = "red";
+                canvasContext.beginPath();
+                canvasContext.arc(coords[i][0], coords[i][1], 5, 0, Math.PI * 2, true);
+                canvasContext.fill();
+            }
+        }, 500);
+    </script>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 

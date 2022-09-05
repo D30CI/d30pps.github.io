@@ -64,15 +64,15 @@
                             </a>
 
                         </li>
-                        <li class="sidebar-item active">
-                            <a href="#" class='sidebar-link'>
+                        <li class="sidebar-item ">
+                            <a href="proses-pengerjaan.html" class='sidebar-link'>
                                 <i class="bi bi-file-plus"></i>
-                                <span>Proses Pengerjaan</span>
+                                <span>Orderan Masuk</span>
                             </a>
 
                         </li>
-                        <li class="sidebar-item ">
-                            <a href="#" class='sidebar-link'>
+                        <li class="sidebar-item active">
+                            <a href="ceklist.html" class='sidebar-link'>
                                 <i class="bi bi-file-plus"></i>
                                 <span>Ceklis</span>
                             </a>
@@ -81,7 +81,14 @@
                         <li class="sidebar-item ">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-file-plus"></i>
-                                <span>Nota</span>
+                                <span>Invoice</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="Login.html" class='sidebar-link'>
+                                <i class="bi bi-file-plus"></i>
+                                <span>Login</span>
                             </a>
 
                         </li>
@@ -108,65 +115,163 @@
                     <img src="assets/images/logo/logo-white.png">
                 </div>
             </div>
-            <div class="page-heading">
-                <h3>Kondisi Kendaraan</h3>
-            </div>
+
             <div class="page-content">
                 <section class="row">
 
-                    <div class="row">
-                        <div class="tengah">
 
-                            <canvas id="mcanvas" width="364" height="219"></canvas>
-
-                        </div>
-
-                    </div>
                     <div class="page-heading">
                         <h3>Ceklist Kerusakan Kendaraan</h3>
                     </div>
-                    <div class="col-6">
-
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Bemper Kiri</span>
-                            </div>
-                            <select class="form-select" id="bp_kiri">
-                                <option value="0">Bagus</option>
-                                <option value="[25, 120]">Tergores</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6">
-
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Bemper Depan</span>
-                            </div>
-                            <select class="form-select" id="bp_depan">
-                                <option value="[50, 120]">Bagus</option>
+                    <div class="col-md-6 mb-4">
+                        <h6>Bemper Kiri</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="1">
                                 <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
                             </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
                         </div>
                     </div>
 
-            </div>
-            </section>
+                    <div class="col-md-6 mb-4">
+                        <h6>Bemper Depan</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
 
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Bemper Kanan</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Kap Depan</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Pintu Kiri Depan</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Pintu Kanan Depan</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Pintu Kiri Belakang</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h6>Pintu Kanan Belakang</h6>
+                        <div class="input-group mb-4">
+                            <select class="form-select" id="bp_depan">
+                                <option value="[50, 120]">Tergores</option>
+                                <option value="[50, 120]">Bagus</option>
+                            </select>
+
+                            <label for="file_ken1" class="input-group-text">
+                                <a class="btn btn-warning btn-sm" rel="nofollow"><span class='bi bi-paperclip'></span>
+                                    Upload</a>
+                            </label>
+                            <input type="file" name="file_ken1" id="file_ken1" hidden>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 d-flex justify-content-end">
+                        <a href="proses-ceklist.html" type="submit" class="btn btn-primary me-1 mb-1">Submit</a>
+                        <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                    </div>
+                </section>
+
+
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2022 &copy; PPS</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                                href="https://payone.id">D30 Codingers</a></p>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <footer>
-            <div class="footer clearfix mb-0 text-muted">
-                <div class="float-start">
-                    <p>2022 &copy; PPS</p>
-                </div>
-                <div class="float-end">
-                    <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                            href="https://payone.id">D30 Codingers</a></p>
-                </div>
-            </div>
-        </footer>
-    </div>
     </div>
 
     <script>

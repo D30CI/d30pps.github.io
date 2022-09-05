@@ -22,51 +22,66 @@
     <div id="app">
 
 
-        <div class="page-heading">
-            <div class="logo-tengah">
-                <img src="assets/images/logo/logo-white.png">
-            </div>
-        </div>
-    </div>
 
-    <div class="page-content">
-        <section class="row">
-            <div class="row">
+
+        <div class="page-content">
+            <section class="row">
                 <div class="tengah">
-                    <a href="#" class="login-forgot">Forgot Password</a>
-                </div>
-                <div class="tengah">
-                    <input class="login-pps" type="text" placeholder="username">
-                </div>
-                <div class="tengah">
-                    <input class="login-pps" type="password" placeholder="Password">
-                </div>
-                <div class="tengah">
-                    <div class="checkbox">
-                        <input type="checkbox" id="remember" class="form-check-input" checked=""> Remember me
+                    <div class="col-lg-5 col-12">
+                        <div id="auth-left">
+                            <div class="auth-logo">
+                                <a href="index.html"><img src="assets/images/logo/logo-white.png" alt="Logo"></a>
+                            </div>
+                            <div class="text-center mt-5 text-lg fs-4">
+
+                                <p><a class="font-bold" href="#">Forgot password?</a>.</p>
+                            </div>
+
+                            <form action="index.html">
+                                <div class="form-group position-relative has-icon-left mb-4">
+                                    <input type="text" class="form-control form-control-xl" style="background: #000;"
+                                        placeholder="Username">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group position-relative has-icon-left mb-4">
+                                    <input type="password" class="form-control form-control-xl"
+                                        style="background: #000;" placeholder="Password">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-shield-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-lg d-flex align-items-end">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label text-gray-600" for="flexCheckDefault">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn btn-warning btn-block btn-lg shadow-lg mt-5"
+                                    style="color: #000; ">Log in</button>
+                            </form>
+
+                        </div>
                     </div>
-                    <div class="tengah">
-                        <button class="login-button">Login</button>
-                    </div>
 
+
+
+
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer clearfix mb-0 text-muted">
+                <div class="float-start">
+                    <p>2022 &copy; PPS</p>
+                </div>
+                <div class="float-end">
+                    <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
+                            href="https://payone.id">D30 Codingers</a></p>
                 </div>
             </div>
-
-
-        </section>
-    </div>
-
-    <footer>
-        <div class="footer clearfix mb-0 text-muted">
-            <div class="float-start">
-                <p>2022 &copy; PPS</p>
-            </div>
-            <div class="float-end">
-                <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                        href="https://payone.id">D30 Codingers</a></p>
-            </div>
-        </div>
-    </footer>
+        </footer>
     </div>
     </div>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
