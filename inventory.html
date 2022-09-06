@@ -43,7 +43,7 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item  ">
                             <a href="index.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
@@ -64,7 +64,7 @@
                             </a>
 
                         </li>
-                        <li class="sidebar-item ">
+                        <li class="sidebar-item">
                             <a href="proses-pengerjaan.html" class='sidebar-link'>
                                 <i class="bi bi-file-plus"></i>
                                 <span>Orderan Masuk</span>
@@ -95,7 +95,7 @@
                         <li class="sidebar-item ">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-file-plus"></i>
-                                <span>Databas / Admin</span>
+                                <span>Database / Admin</span>
                             </a>
 
                         </li>
@@ -125,96 +125,74 @@
 
             <div class="page-content">
                 <section class="row">
-                    <div class="page-heading">
-                        <h3>Dashboard</h3>
-                    </div>
                     <div class="row">
-                        <div class="col-6 col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body px-3 py-4-5">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="stats-icon blue">
-                                                <i class="iconly-boldProfile"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h6 class="text-muted font-semibold">Sales</h6>
-                                            <h6 class="font-extrabold mb-0">10</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>STOCK INVENTORY</h3>
+                        <H5>Barang Berjalan</H5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0" style="border: 1px solid; border-color: #000;">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th style="width: 200px;">Stock Barang</th>
+                                        <th style="width: 200px;">Isi/Botol</th>
+                                        <th>Harga/Botol</th>
+                                        <th>Pemakaian/Mili</th>
+                                        <th>Harga/Mili</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1 Compound</td>
+                                        <td style="background-color: #FFD700;">1000 mili</td>
+                                        <td>Rp 1.000.000</td>
+                                        <td>10 mili</td>
+                                        <td>Rp 10.000</td>
+                                        <td style="background-color: #FFD700;">990 mili</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>1 Tevo</td>
+                                        <td style="background-color: #FFD700;">30 mili</td>
+                                        <td>Rp 1.500.000</td>
+                                        <td>10 mili</td>
+                                        <td>Rp 150.000</td>
+                                        <td style="background-color: #FFD700;">990 mili</td>
+                                    </tr>
+                                </tbody>
+                                </thead>
+                            </table>
                         </div>
-                        <div class="col-6 col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body px-3 py-4-5">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="stats-icon green">
-                                                <i class="iconly-boldAdd-User"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h6 class="text-muted font-semibold">Member</h6>
-                                            <h6 class="font-extrabold mb-0">100.000</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h5>Barang Semi Berjalan</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0" style="border: 1px solid; border-color: #000;">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th style="width: 200px;">Nama Barang</th>
+                                        <th style="width: 200px;">Jumlah Barang</th>
+                                        <th>Harga</th>
+                                        <th>Harga/Pcs</th>
+                                        <th>Rusak</th>
+                                        <th>Sisa Barang</th>
+                                        <th>Harga</th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Pad</td>
+                                        <td style="background-color: #FFD700;">10 Pcs</td>
+                                        <td>Rp 500.000</td>
+                                        <td style="background-color: #f76a6a;">Rp 50.000</td>
+                                        <td style="background-color: #f76a6a;">1 Pcs</td>
+                                        <td style="background-color: #FFD700;">9 Pcs</td>
+                                        <td>Rp 450.000</td>
+                                    </tr>
+                                </tbody>
+                                </thead>
+                            </table>
+
                         </div>
-                        <div class="col-6 col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body px-3 py-4-5">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="stats-icon yellow">
-                                                <i class="iconly-boldPaper-Plus"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h6 class="text-muted font-semibold">Pekerjaan</h6>
-                                            <h6 class="font-extrabold mb-0">112</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body px-3 py-4-5">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="stats-icon success">
-                                                <i class="iconly-boldPaper"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <h6 class="text-muted font-semibold">Pekerjaan slesai</h6>
-                                            <h6 class="font-extrabold mb-0">112</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Profile Visit</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div id="chart-profile-visit"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </section>
             </div>
             <footer>
