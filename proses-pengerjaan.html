@@ -170,8 +170,8 @@
                                                     data-container="body" data-toggle="popover" title="AGUS"
                                                     data-placement="left" data-html="true"
                                                     data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
-                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
-                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                                    data-title="AGUS" data-trigger="focus"><i
+                                                        class="fa fa-caret-down"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -193,8 +193,8 @@
                                                     data-container="body" data-toggle="popover" title="AGUS"
                                                     data-placement="left" data-html="true"
                                                     data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
-                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
-                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                                    data-title="AGUS" data-trigger="focus"><i
+                                                        class="fa fa-caret-down"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -214,10 +214,10 @@
                                             <div class="btn-group dropstart  mb-1">
                                                 <button type="button" class="btn btn-primary btn-xs"
                                                     data-container="body" data-toggle="popover" title="AGUS"
-                                                    data-placement="left" data-html="true"
+                                                    data-placement="left" data-html="true" data-trigger="focus"
                                                     data-content="<div class='list-group'><a class='list-group-item' href='#' data-toggle='modal' ><i class='fa fa-wrench'></i> Proses</a><a class='list-group-item' href='#' ><i class='fa fa-times'></i> Batal Proses</a><a class='list-group-item' href='proses.html'><i class='fa fa-info'></i> Detail</a></div>"
-                                                    data-title="AGUS" data-trigger="focus" data-original-title=""
-                                                    title=""><i class="fa fa-caret-down"></i></button>
+                                                    data-title="AGUS" data-trigger="focus"><i
+                                                        class="fa fa-caret-down"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -270,10 +270,20 @@
     <script src="assets/fullcalendar/dist/locale/id.js"></script>
     <script src="assets/fullcalendar/dist/gcal.js"></script>
     <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus',
+                html: true,
+                content: function () {
+                    return $(this).attr('data-content');
+                }
+            });
+        });
+    </script>
+    <script>
         $(function () {
 
-            /* initialize the external events
-             -----------------------------------------------------------------*/
+            /* initialize the external events  -----------------------------------------------------------------*/
             function init_events(ele) {
                 ele.each(function () {
 
